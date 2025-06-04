@@ -1,0 +1,40 @@
+.about,
+.history,
+.culture,
+.experience {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 10px;
+
+    &__text {
+        color: #636060;
+        font-size: 14px;
+
+        h1 {
+            color: #364a81;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #fff;
+            padding: 5px;
+        }
+    }
+
+    &__img {
+        width: 35vw;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        img {
+            width: 80vw;
+            margin-top: 20px;
+        }
+    }
+}

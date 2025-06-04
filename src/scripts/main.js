@@ -1,3 +1,7 @@
+//Efeito no scroll
+AOS.init();
+
+
 //Pegando o Stamp da data do evento
 const dataEvento = new Date("jun 11, 2026 17:00:00");
 const DataStampEvento = dataEvento.getTime();
@@ -43,3 +47,6 @@ const contaHoras = setInterval(() => {
         clearInterval(contaHoras);
     }
 }, 1000);
+
+
+

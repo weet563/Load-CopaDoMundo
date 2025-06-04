@@ -3,6 +3,13 @@
 @use 'componentes/infos_bar';
 @use 'componentes/buttons';
 @use 'componentes/event-expired';
+@use 'sections';
+@use 'footer';
+
+html,
+body {
+    background-color: rgba(31, 58, 61, 1);
+}
 
 .container {
     max-width: 960px;
@@ -12,7 +19,7 @@
     @media (max-width: 1024px) {
         max-width: 90%;
     }
-    
+
     @media (max-width: 640px) {
         max-width: 80%;
     }
@@ -21,4 +28,33 @@
 
 .expired {
     display: none !important;
+}
+
+.section--primary {
+    background: linear-gradient(137deg,rgba(22, 36, 54, 1) 40%, rgba(31, 58, 61, 1) 64%);
+}
+.section--secundary {
+    background: linear-gradient(11deg,rgba(22, 36, 54, 1) 40%, rgba(31, 58, 61, 1) 64%);
+    
+        h1 {
+            color: #788dc2;
+        }
+}
+.section--third {
+    background: linear-gradient(48deg,rgba(22, 36, 54, 1) 40%, rgba(31, 58, 61, 1) 64%);
+}
+.section--fourth {
+    background: linear-gradient(180deg,rgba(22, 36, 54, 1) 40%, rgba(31, 58, 61, 1) 64%);
+
+    h1 {
+            color: #5775c2;
+        }
+}
+
+.img-left {
+    flex-direction: row-reverse;
+}
+
+a {
+    text-decoration: none;
 }
