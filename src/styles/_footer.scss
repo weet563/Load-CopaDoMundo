@@ -25,4 +25,10 @@ footer {
     a:hover img {
         transform: scale(1.1);
     }
+
+    @media (max-width: 640px) {
+        .social-link {
+            width: 80vw;
+        }
+    }
 }
